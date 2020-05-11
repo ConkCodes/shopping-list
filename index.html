@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript + DOM</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Shopping List</h1>
+        <p id="first">Get it done today</p>
+        <p class="second">No excuses</p>
+        <input type="text" placeholder="add items">
+        <button id="add">Submit</button>
+        <ul>
+            <!-- must use p elements inside li elements not a text node -->
+            <!-- text node's cannot fire the click event itself -->
+            <li><p>Notebook </p><button>Delete</button></li>
+            <li><p>Jello </p><button>Delete</button></li>
+            <li><p>Spinach </p><button>Delete</button></li>
+            <li><p>Rice </p><button>Delete</button></li>
+            <li><p>Birthday Cake </p><button>Delete</button></li>
+            <li><p>Candles </p><button>Delete</button></li>
+        </ul>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
